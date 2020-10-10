@@ -1,1 +1,117 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- JS, Popper.js, and jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS only -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Photo Gallery</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a id="logo" class="navbar-brand text-light flex-grow-1 ml-4" href="#"
+          >The Gallery</a
+        >
+        <div class="dropdown">
+          <button
+            class="btn btn-secondary dropdown-toggle mr-4"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Sort
+          </button>
+          <div
+            class="dropdown-menu dropdown-menu-right bg-secondary mr-4"
+            aria-labelledby="dropdownMenuButton"
+          >
+            <a
+              class="dropdown-item bg-secondary text-light text-center"
+              href="#"
+              >By Name</a
+            >
+            <a
+              class="dropdown-item bg-secondary text-light text-center"
+              href="#"
+              >By Type</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="the-gallery-intro p-4 d-flex justify-content-center">
+      <div class="intro-text w-50">
+        <h1 class="display-4 text-center"><strong>The Gallery</strong></h1>
+        <h4 class="text-center p-3">About Me</h4>
+        <p class="lead text-wrap">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+          doloremque ipsa eos animi quo! Molestias praesentium omnis nulla
+          inventore quae laudantium, aliquam aliquid nobis quos doloribus saepe
+          debitis ut mollitia.
+        </p>
+      </div>
+      <div class="intro-img">
+        <img
+          src="./photos/andre-furtado-JtV6zyOZSrA-unsplash.jpg"
+          class="img-fluid"
+          alt="Responsive image"
+        />
+      </div>
+    </section>
+    <hr class="w-75 m-auto" />
+    <section class="gallery-section">
+      <div class="title pt-3 text-center">
+        <h4>My Work</h4>
+      </div>
+      <div class="image-gallery">
+        <div class="img1">
+          <img
+            src="./photos/dan-freeman-hIKVSVKH7No-unsplash.jpg"
+            alt="new-zealand"
+            class="img-thumbnail"
+          />
+        </div>
+        <div class="img2">
+          <img
+            src="./photos/paul-carroll-lpY5UwUM4Us-unsplash.jpg"
+            alt="mountain"
+            class="img-thumbnail"
+          />
+        </div>
+        <div class="img3">
+          <img
+            src="./photos/v2osk-1Z2niiBPg5A-unsplash.jpg"
+            alt="antarctica"
+            class="img-thumbnail"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
